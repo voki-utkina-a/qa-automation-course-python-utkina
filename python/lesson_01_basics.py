@@ -1,6 +1,3 @@
-from socket import J1939_MAX_UNICAST_ADDR
-
-
 print('Hello, Mystery Matters!')
 print('Я', 'учусь', 'программировать', 'на', 'Python!')
 print(1991, 'Gvido', 'van', 'Rossum')
