@@ -1,6 +1,3 @@
-from calendar import firstweekday
-
-
 print('Hello, Mystery Matters!')
 print('Я', 'учусь', 'программировать', 'на', 'Python!')
 print(1991, 'Gvido', 'van', 'Rossum')
@@ -92,7 +89,6 @@ else:
 test_results = ["passed", "failed", "passed", "passed", "failed", "skipped"]
 failed_count = 0
 for result in test_results:
-    if result == "passed":
+    if result == "failed":
         failed_count += 1 
 print(f"Количество упавших тестов: {failed_count}")
-
