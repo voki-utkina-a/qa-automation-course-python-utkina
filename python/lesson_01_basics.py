@@ -40,7 +40,29 @@ print('Привет,', name4)
 name5 = 'нечто из царства тьмы!'
 print('Привет,', name5)
 
+name = 'Aleksa'
+figure = 'apple'
+number = -3.14
 
+print(name, figure, number)
+
+name = 'Aleksa'
+number = '2'
+number2 = -3.14
+print(name, int(number) + number2)
+
+num1 = int(input("Write first number: "))
+num2 = int(input("Write second number: "))
+print("Result: ", num1 + num2)
+print("Result: ", num1 - num2)
+print("Result: ", num1 * num2)
+print("Result: ", num1 / num2)
+print("Result: ", num1 % num2)
+print("Result: ", num1 ** num2)
+print("Result: ", num1 // num2)
+
+word = "Allo"
+print(word * 50)
 
 status_code = 404
 response_time = 1.4
@@ -67,6 +89,6 @@ else:
 test_results = ["passed", "failed", "passed", "passed", "failed", "skipped"]
 failed_count = 0
 for result in test_results:
-    if result == "passed":
+    if result == "failed":
         failed_count += 1 
 print(f"Количество упавших тестов: {failed_count}")
