@@ -39,3 +39,34 @@ name4 = 'МИР'
 print('Привет,', name4)
 name5 = 'нечто из царства тьмы!'
 print('Привет,', name5)
+
+
+
+status_code = 404
+response_time = 1.4
+if status_code == 200 and response_time < 1.0:
+    print("Успешно! Ответ получен быстро.")
+elif status_code == 200 and response_time >= 1.0:
+    print("Успешно, но сервер отвечает медленно.")
+elif status_code == 404:
+    print("Ошибка: Страница не найдена.")
+else:
+    print("Ошибка сервера с кодом:", status_code)
+
+
+
+user_role = "user"
+is_active = True
+is_blocked = False
+if (user_role == "admin" or user_role == "superuser") and is_active and not is_blocked:
+    print("Доступ в админку разрешен")
+else:
+    print("В доступе отказано")
+
+
+test_results = ["passed", "failed", "passed", "passed", "failed", "skipped"]
+failed_count = 0
+for result in test_results:
+    if result == "passed":
+        failed_count += 1 
+print(f"Количество упавших тестов: {failed_count}")
