@@ -18,7 +18,15 @@ user = {
     'email': 'aly@gmail.com'
 }   
 print(user['name'])
-
+user['age'] -= 5
+print(user['age'])
+for key, value in user.items():
+    print(key, value)
+for key in user:
+    print(key)
+for value in user.values():
+    print(value)
+    
 build = {
     'version': '1.2.0',
     'environment': 'staging',
@@ -52,3 +60,11 @@ for bug in unique_bugs:
     print(bug)
 if 'crash' in unique_bugs:
     print('crash found')
+
+test_results = [
+    {'name': 'Login', 'status': 'passed'},
+    {'name': 'Payment', 'status': 'failed'},
+]
+for test in test_results:
+    if test['status'] == 'failed':
+        print(test['name'])
