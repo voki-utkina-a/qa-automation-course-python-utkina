@@ -11,7 +11,7 @@ print('15')
 print('16')
 print('23')
 print('42')
-print()
+
 print('*')
 print('**')
 print('***')
@@ -19,14 +19,15 @@ print('****')
 print('*****')
 print('******')
 print('*******')
-print()
+
 print('What is your name?')
 my_name = input()
 print('Hello,', my_name, '!')
-print()
+
 first = 'just'
 second = 'do it'
 print(first, second, '!')
+
 name = 'Тимур'
 print('Привет,', name)
 name1 = 'Гвидо'
@@ -43,13 +44,13 @@ print('Привет,', name5)
 name = 'Aleksa'
 figure = 'apple'
 number = -3.14
-
 print(name, figure, number)
 
 name = 'Aleksa'
 number = '2'
 number2 = -3.14
-print(name, int(number) + number2)
+ukrainian = True
+print(name, int(number) + number2, ukrainian)
 
 num1 = int(input("Write first number: "))
 num2 = int(input("Write second number: "))
@@ -75,8 +76,6 @@ elif status_code == 404:
 else:
     print("Ошибка сервера с кодом:", status_code)
 
-
-
 user_role = "user"
 is_active = True
 is_blocked = False
@@ -85,10 +84,26 @@ if (user_role == "admin" or user_role == "superuser") and is_active and not is_b
 else:
     print("В доступе отказано")
 
-
 test_results = ["passed", "failed", "passed", "passed", "failed", "skipped"]
 failed_count = 0
 for result in test_results:
     if result == "failed":
         failed_count += 1 
-print(f"Количество упавших тестов: {failed_count}")
+print('Количество упавших тестов:', failed_count)
+
+age = 16
+has_account = True
+is_banned = True
+level = 2
+if is_banned:
+    print('Access denied')
+elif not is_banned and not has_account:
+    print('Account required')
+elif not is_banned and has_account and age >= 18:
+    print('Full access') 
+else:
+    print('Limited access')   
+    
+while level <=5:
+    print(level)
+    level += 1
