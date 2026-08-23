@@ -1,28 +1,54 @@
-users = ["Alyona", "Shasha", "Olya"]
+users = ['Alyona', 'Shasha', 'Olya']
 print(users[0])
+print(users[-1])
+users[2] = 'new_Olya'
+print(users[-1])
 
-users = ["Alyona", "Shasha", "Olya"]
-users.append("Kate")
+users = ['Alyona', 'Shasha', 'Olya']
+users.append('Kate')
 print(users)
 
-users = ["Alyona", "Shasha", "Olya"]
+users = ['Alyona', 'Shasha', 'Olya']
 for user in users:
     print(user)
 
 user = {
-    "name": "Alyona",
-    "age": 34,
-    "email": "aly@gmail.com"
+    'name': 'Alyona',
+    'age': 34,
+    'email': 'aly@gmail.com'
 }   
 print(user['name'])
 
 build = {
-    "version": "1.2.0",
-    "environment": "staging",
-    "status": "failed"
+    'version': '1.2.0',
+    'environment': 'staging',
+    'status': 'failed'
 }
-if  build["status"] == "passed":
-    print("Build passed")
+if  build['status'] == 'passed':
+    print('Build passed')
 else:
-    print("Build failed")
+    print('Build failed')
 
+game_settings = ('1920x1080', 'high', True)
+print(game_settings[0])
+print(game_settings[1])
+print(game_settings[2])
+for setting in game_settings:
+    print(setting)
+if 'high' in game_settings:
+    print('High quality enabled')
+
+bugs = [
+    'login_error',
+    'crash',
+    'login_error',
+    'ui_bug',
+    'crash',
+]
+unique_bugs = set(bugs)
+print(unique_bugs)
+unique_bugs.add('sound_bug')
+for bug in unique_bugs:
+    print(bug)
+if 'crash' in unique_bugs:
+    print('crash found')
