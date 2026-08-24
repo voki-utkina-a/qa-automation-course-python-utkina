@@ -24,4 +24,14 @@ func = lambda x, y: x + y
 res = func(7, 3)
 print(res)
 
+import random
+number = random.randint(1, 10)
+print(number)
 
+def check_test_status(status):
+    if status == 'passed':
+        return 'Test passed'
+    else:
+        return 'Test failed'
+result = check_test_status('failed')
+print(result)
