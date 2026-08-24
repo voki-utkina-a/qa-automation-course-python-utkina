@@ -4,6 +4,10 @@ def summa(a, b):
 summa(5, 7 )
 summa('H', 'i')
 
+def summa(a, b):
+    return a + b
+res = summa(10, 3)
+print(res)
 
 def minimal(l):
     min_number = l[0]
@@ -19,3 +23,5 @@ minimal(num2)
 func = lambda x, y: x + y
 res = func(7, 3)
 print(res)
+
+
